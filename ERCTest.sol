@@ -1,5 +1,3 @@
-// Ce contrat est destine a roxalex
-
 pragma solidity ^0.8.20;
 
 contract ERCTest{
