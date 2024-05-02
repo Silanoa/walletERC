@@ -1,5 +1,3 @@
-// ce contrat de test est destine Roxalex
-
 pragma solidity ^0.8.25;
 
 //import lib from std lib
@@ -7,13 +5,13 @@ import "forge-std/Test.sol";
 import "forge-std/console2.sol";
 
 //import contract to test
-import "../src/ERCTest.sol";
+import "../src/ERCWallet.sol";
 
 contract TestERC is Test{
-     ERCTest ERC;
+     ERCWallet ERC;
     
      function setUp() external {
-        ERC = new ERCTest("slash", "SL");
+        ERC = new ERCWallet("slash", "SL");
         ERC._mint(address(1), 1e8);
     }
 
